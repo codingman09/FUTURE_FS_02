@@ -1,0 +1,110 @@
+/* Reset */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+}
+
+/* MAIN CONTAINER — PERFECT CENTER */
+.container{
+  width:100%;
+  max-width:1200px;
+  padding:40px 20px;
+}
+
+/* Title */
+.title{
+  font-size:34px;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:40px;
+}
+
+/* Dashboard cards */
+.dashboard{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  margin-bottom:30px;
+}
+
+/* Card UI */
+.card{
+  background:white;
+  padding:20px;
+  border-radius:14px;
+  box-shadow:0px 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ⭐ THIS FIXES YOUR LEFT PROBLEM */
+.main-layout{
+  display:grid;
+  grid-template-columns:350px 1fr;
+  gap:30px;
+  align-items:start;
+}
+
+/* Leads Grid */
+.lead-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* Inputs */
+input,select{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+/* Buttons */
+button{
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.add-btn{
+  background:#4CAF50;
+  color:white;
+  margin-top:10px;
+  width:100%;
+}
+
+.edit-btn{
+  background:orange;
+  color:white;
+}
+
+.delete-btn{
+  background:#ff4d4d;
+  color:white;
+  margin-left:10px;
+}
+
+/* Status badge */
+.badge{
+  display:inline-block;
+  padding:5px 10px;
+  border-radius:6px;
+  color:white;
+  font-size:12px;
+  margin-top:8px;
+}
+
+.hot{
+  background:red;
+}
+
+.cold{
+  background:gray;
+}
